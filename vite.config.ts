@@ -12,13 +12,5 @@ export default defineConfig({
       generatedRouteTree: "./src/pages/routeTree.gen.ts",
     }),
     react(),
-    viteStaticCopy({
-      targets: [
-        {
-          src: "./src/assets/*",
-          dest: "./assets",
-        },
-      ],
-    }),
   ],
 });
