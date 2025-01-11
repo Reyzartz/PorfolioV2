@@ -1,14 +1,26 @@
-import { Link } from "@tanstack/react-router";
-
 function Home() {
   return (
-    <div>
-      <h1 className="text-5xl font-bold mb-8 text-primary">Hi, I'm Reyan</h1>
+    <div className="text-secondary text-lg space-y-2">
+      <p>
+        <span>I'm a software developer working remotely at</span>
 
-      <p className="text-xl mb-6 text-secondary">
-        I'm a software engineer, currently working as Product engineer at
-        RevenueHero. I'm passionate about building impactful products and
-        writing clean, efficient code.
+        <a
+          href="https://revenuehero.io"
+          className="underline ml-1 hover:text-primary"
+          target="_blank"
+        >
+          RevenueHero
+        </a>
+
+        <span>
+          . I'm passionate about building impactful products and writing clean,
+          efficient code.
+        </span>
+      </p>
+
+      <p>
+        Outside my profession, I enjoy playing chess, training in kickboxing and
+        sketching.
       </p>
     </div>
   );
