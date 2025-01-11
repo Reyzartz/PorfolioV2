@@ -4,6 +4,13 @@ import { LinkedinIcon } from "../icons/linkedin";
 import { GmailIcon } from "../icons/gmail";
 import { CodePenIcon } from "../icons/codepen";
 import { TwitterIcon } from "../icons/twitter";
+import {
+  CODEPEN_LINK,
+  EMAIL,
+  GITHUB_LINK,
+  LINKEDIN_LINK,
+  TWITTER_LINK,
+} from "../../data/links";
 
 type NavLink = {
   icon: React.ComponentType<{ width?: number; height?: number }>;
@@ -15,27 +22,27 @@ const navLinks: NavLink[] = [
   {
     icon: GitHubIcon,
     label: "GitHub",
-    href: "https://github.com/reyzartz",
+    href: GITHUB_LINK,
   },
   {
     icon: LinkedinIcon,
     label: "LinkedIn",
-    href: "https://linkedin.com/in/reyan-rahman",
+    href: LINKEDIN_LINK,
   },
   {
     icon: CodePenIcon,
     label: "CodPen",
-    href: "https://codepen.io/reyzartz",
+    href: CODEPEN_LINK,
   },
   {
     icon: TwitterIcon,
     label: "Twitter",
-    href: "https://x.com/reyan_rahman",
+    href: TWITTER_LINK,
   },
   {
     icon: GmailIcon,
     label: "Contact",
-    href: "mailto:reyanrahma@gmail.com",
+    href: `mailto:${EMAIL}`,
   },
 ];
 
