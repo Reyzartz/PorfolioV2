@@ -1,4 +1,6 @@
-function Home() {
+import { memo } from "react";
+
+const Introduction = memo(() => {
   return (
     <div className="text-secondary text-lg space-y-2">
       <p>
@@ -24,6 +26,10 @@ function Home() {
       </p>
     </div>
   );
+});
+
+function Home() {
+  return <Introduction />;
 }
 
 export { Home };
