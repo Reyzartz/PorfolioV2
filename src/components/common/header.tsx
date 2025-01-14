@@ -1,5 +1,5 @@
 import { memo } from "react";
-import NavBar from "./navBar";
+import { ContactLinks } from "./contactLinks";
 
 const Header = memo(() => {
   return (
@@ -8,7 +8,7 @@ const Header = memo(() => {
 
       <h3 className=" text-xl text-secondary mb-4">Frontend Engineer</h3>
 
-      <NavBar />
+      <ContactLinks />
     </header>
   );
 });

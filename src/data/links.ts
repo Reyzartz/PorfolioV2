@@ -1,9 +1,3 @@
-import { GitHubIcon } from "../components/icons/github";
-import { LinkedinIcon } from "../components/icons/linkedin";
-import { GmailIcon } from "../components/icons/gmail";
-import { CodePenIcon } from "../components/icons/codepen";
-import { TwitterIcon } from "../components/icons/twitter";
-
 export const GITHUB_LINK = "https://github.com/reyzartz";
 
 export const LINKEDIN_LINK = "https://linkedin.com/in/reyan-rahman";
@@ -15,3 +9,9 @@ export const TWITTER_LINK = "https://x.com/reyan_rahman";
 export const EMAIL = "reyanrahma@gmail.com";
 
 export const RH_LINK = "https://revenuehero.io";
+
+export const PROJECT_LINKS = {
+  PORTFOLIO: "https://github.com/yourusername/portfolio",
+  CHESS_APP: "https://github.com/yourusername/chess-app",
+  SKETCH_GALLERY: "https://github.com/yourusername/sketch-gallery",
+} as const;

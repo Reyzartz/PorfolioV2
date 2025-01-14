@@ -4,7 +4,7 @@ import { EXPERIENCES } from "../../data/experiences";
 const Experience = memo(() => {
   return (
     <section>
-      <h3 className="font-semibold text-2xl text-primary mb-3">Experience</h3>
+      <h3 className="font-semibold text-xl text-primary mb-3">Experience</h3>
 
       <div className="divide-y xl:divide-x xl:divide-y-0 divide-default grid xl:grid-cols-2">
         {EXPERIENCES.map((exp, index) => (
@@ -15,9 +15,7 @@ const Experience = memo(() => {
                 target="_blank"
                 className="hover:text-primary underline"
               >
-                <h4 className="font-semibold text-xl text-primary mb-0.5">
-                  {exp.company}
-                </h4>
+                <h4 className="text-primary mb-0.5">{exp.company}</h4>
               </a>
 
               <p className="text-secondary text-sm">{exp.period}</p>

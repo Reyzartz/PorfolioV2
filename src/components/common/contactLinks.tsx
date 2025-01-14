@@ -46,7 +46,7 @@ const navLinks: NavLink[] = [
   },
 ];
 
-function NavBar() {
+function ContactLinks() {
   return (
     <nav className="text-secondary text-sm">
       <ul className="flex gap-4">
@@ -67,4 +67,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export { ContactLinks };
