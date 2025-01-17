@@ -5,8 +5,8 @@ const Introduction = memo(() => {
   return (
     <section className="text-secondary space-y-2">
       <p>
-        <span>I'm a software developer working remotely at</span>
-
+        Hey, <br />
+        <span>I'm Reyan, a Frontend Engineer at</span>
         <a
           href={RH_LINK}
           className="underline mx-1 text-primary"
@@ -14,15 +14,20 @@ const Introduction = memo(() => {
         >
           RevenueHero
         </a>
-
         <span>
-          for the past three years. I'm passionate about building impactful
-          products and writing clean, efficient code.
+          with 3+ years of experience in building scalable web applications.
         </span>
       </p>
 
       <p>
-        Outside my profession, I enjoy playing chess, training in kickboxing and
+        At RevenueHero, I've built core features like lead routing and meeting
+        scheduling systems. Previously at Team Geek Solutions, I focused on
+        feature development and performance optimization.
+      </p>
+
+      <p>
+        I'm passionate about clean code, modern web technologies, and creating
+        efficient solutions. Outside work, I enjoy chess, kickboxing and
         sketching.
       </p>
     </section>
