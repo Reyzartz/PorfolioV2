@@ -8,16 +8,18 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col mx-auto lg:max-h-screen overflow-hidden">
-      <div className="flex flex-grow flex-col lg:flex-row overflow-hidden">
-        <Header />
+    <div className="min-h-screen flex flex-col mx-auto lg:max-h-screen overflow-hidden lg:flex-row">
+      <Header />
 
-        <main className="flex-grow mx-auto lg:p-10 py-4 overflow-scroll w-full">
-          <div className="mx-auto w-full max-w-4xl px-6">{children}</div>
-        </main>
+      <div className="flex-grow overflow-scroll">
+        <main className="mx-auto lg:py-10 py-4  w-full">
+          <div className="mx-auto w-full max-w-4xl px-6 lg:px-10">
+            {children}
+          </div>
+        </main> 
+
+        <Footer />
       </div>
-
-      <Footer />
     </div>
   );
 };

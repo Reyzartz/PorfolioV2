@@ -1,5 +1,6 @@
 import { memo } from "react";
-import { GITHUB_LINK, PROJECT_LINKS } from "../../data/links";
+import { GITHUB_LINK } from "../../data/links";
+import { PROJECTS } from "../../data/projects";
 import { GitHubIcon } from "../icons/github";
 import { RedirectIcon } from "../icons/redirect";
 
@@ -56,38 +57,18 @@ const ProjectItem = memo(
 
 const Projects = memo(() => {
   return (
-    <section className="text-secondary space-y-4">
+    <section className="text-secondary">
       <h2 className="text-xl font-medium text-primary">Projects</h2>
 
       <ul>
-        <ProjectItem
-          title="Code Snippet App"
-          siteLink="https://snippetapp.vercel.app/"
-          githubLink="https://github.com/Reyzartz/snippet-app"
-          description="Full stack web app for creating and sharing code snippets with syntax highlighting"
-          stack={["Next.js", "MongoDB", "TailwindCSS", "Auth0"]}
-        />
-
-        <ProjectItem
-          title="React Voice Assistant"
-          siteLink="https://react-voice-assistant.netlify.app/"
-          githubLink="https://github.com/Reyzartz/react-voice-assistant"
-          description="NPM package for adding voice commands to React applications"
-          stack={["React", "TypeScript", "Web Speech API"]}
-        />
-
-        <ProjectItem
-          title="GreatLog"
-          siteLink="https://greatlog.vercel.app/"
-          githubLink="https://github.com/Reyzartz/greatlog"
-          description="A minimal changelog manager with version control integration"
-          stack={["React", "Firebase", "Material-UI", "GitHub API"]}
-        />
+        {PROJECTS.map((project, index) => (
+          <ProjectItem key={index} {...project} />
+        ))}
       </ul>
 
       <div>
         <a
-          href="https://github.com/reyzartz"
+          href={GITHUB_LINK}
           target="_blank"
           className="inline-flex items-center text-sm text-secondary hover:text-primary transition-colors"
         >
