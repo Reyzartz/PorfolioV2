@@ -6,11 +6,11 @@ export const CODEPEN_LINK = "https://codepen.io/reyzartz";
 
 export const TWITTER_LINK = "https://x.com/reyan_rahman";
 
-export const EMAIL = "reyanrahma@gmail.com";
+export const EMAIL = "work.reyan@gmail.com";
 
 export const RH_LINK = "https://revenuehero.io";
 
-export const CAL_LINK = "https://cal.com/reyzartz"; // Add your actual Cal.com link here
+export const CAL_LINK = "https://cal.com/reyzartz";
 
 export const PROJECT_LINKS = {
   PORTFOLIO: "https://github.com/yourusername/portfolio",
