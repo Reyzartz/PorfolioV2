@@ -51,15 +51,15 @@ const Contact = memo(() => {
   }, []);
 
   return (
-    <section className="space-y-4">
-      <h2 className="text-xl font-medium text-primary">Let's Chat!</h2>
+    <section>
+      <h2 className="text-xl font-medium text-primary mb-3">Let's Chat!</h2>
 
-      <p>
+      <p className="mb-6">
         Want to grab a virtual coffee or just say hi? Choose a time below to
         chat about tech, projects, or anything else on your mind!
       </p>
 
-      <div className="lg:mx-0 -mx-5">
+      <div className="md:mx-0 -mx-5">
         <Cal calLink="reyan/15min" />
       </div>
     </section>

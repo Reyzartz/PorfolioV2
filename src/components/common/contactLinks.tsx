@@ -49,7 +49,7 @@ const navLinks: NavLink[] = [
 function ContactLinks() {
   return (
     <nav className="text-secondary text-sm">
-      <ul className="flex gap-4">
+      <ul className="flex gap-3.5 justify-start">
         {navLinks.map(({ icon: Icon, label, href }) => (
           <li key={label}>
             <a
@@ -58,7 +58,7 @@ function ContactLinks() {
               className="flex items-center gap-1.5 hover:text-primary text-secondary rounded-md group transition-colors"
               title={label}
             >
-              <Icon width={24} height={24} />
+              <Icon width={18} height={18} />
             </a>
           </li>
         ))}

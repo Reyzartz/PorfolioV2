@@ -39,14 +39,14 @@ const ProjectItem = memo(
               className="text-secondary hover:text-primary transition-colors"
               target="_blank"
             >
-              <RedirectIcon width={14} height={14} />
+              <RedirectIcon width={16} height={16} />
             </a>
             <a
               href={githubLink}
               className="text-secondary hover:text-primary transition-colors"
               target="_blank"
             >
-              <GitHubIcon width={14} height={14} />
+              <GitHubIcon width={16} height={16} />
             </a>
           </div>
         </div>
